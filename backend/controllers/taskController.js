@@ -46,5 +46,6 @@ const deleteTask = async (req, res) => {
         res.status(500).json({ message: error.message }); 
     } 
 }; 
-
+// This is an example of a task controller that handles CRUD operations for tasks in a task management application. It includes functions to get all tasks, add a new task, update an existing task, and delete a task. Each function interacts with the Task model and handles errors appropriately, returning JSON responses to the client. 
+// The `req.user.id` is used to associate tasks with the authenticated user, ensuring that users can only access their own tasks.
 module.exports = { getTasks, addTask, updateTask, deleteTask };
